@@ -1,0 +1,662 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!--<button id="callApiButton">Call API</button>
+<div id="apiResult"></div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+@* dịch vụ smspool *@
+<!--<script>
+    $(function () {
+        $('#callApiButton').click(function () {
+            $.ajax({
+                type: 'GET',
+                url: '/api/proxy',
+                data: {
+                    url: 'https://api.smspool.net',
+                    endpoint: '/request/balance?key=A8bmP8vUkZZat8cGUlF5Nc8G2tj1EmNw'
+                },
+                //headers: {
+                //    'X-API-Key': 'A8bmP8vUkZZat8cGUlF5Nc8G2tj1EmNw'
+                //},
+                success: function (data) {
+                    $('#apiResult').html(data);
+                },
+                error: function () {
+                    $('#apiResult').html('Failed to call API');
+                }
+            });
+        });
+    });
+</script>-->
+
+@* dịch vụ ViOTP *@
+@*<script>
+        $(function () {
+            $('#callApiButton').click(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: '/api/proxy',
+                    data: {
+                        url: 'https://api.viotp.com',
+                        endpoint: '/users/balance?token=9f9675f16b7941de9f5cf04434d77182'
+                    },
+                    //headers: {
+                    //    'X-API-Key': '9f9675f16b7941de9f5cf04434d77182'
+                    //},
+                    success: function (data) {
+                        $('#apiResult').html(data);
+                    },
+                    error: function () {
+                        $('#apiResult').html('Failed to call API');
+                    }
+                });
+            });
+        });
+    </script>*@
+
+
+
+
+
+
+
+
+@*<div class="main-banner" id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="owl-carousel owl-banner">
+                            <div class="item header-text">
+                                <h6>Đăng ký ngay</h6>
+                                <h2>Thuê <em>Sim</em><span> nhận OTP </span>?</h2>
+                                <p>Bạn chỉ có 1 Số điện thoại, Bạn có quá nhiều dịch vụ cần nhiều Sim đăng ký, Xem chi tiết ở đây.</p>
+                                <div class="down-buttons">
+                                    <div class="main-blue-button-hover">
+                                        <a href="#contact">Thuê sim ngay</a>
+                                    </div>
+                                    <div class="call-button">
+                                        <a href="#"><i class="fa fa-phone"></i> 090-080-0760</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item header-text">
+                                <h6>Dịch vụ tăng like các nền tảng mạng xã hội</h6>
+                                <h2>Chúng tôi <em>cung cấp</em> dịch vụ <span>mạng xã hội</span></h2>
+                                <p>Tăng Like, Theo dõi, Comment trên Facebook, Instagram, Shopee, TikTok, Google.</p>
+                                <div class="down-buttons">
+                                    <div class="main-blue-button-hover">
+                                        <a href="#services">Thuê dịch vụ ngay</a>
+                                    </div>
+                                    <div class="call-button">
+                                        <a href="#"><i class="fa fa-phone"></i> 090-080-0760</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item header-text">
+                                <h6>Video Tutorials</h6>
+                                <h2>Tăng <em>tương tác</em> for your <span>projects</span></h2>
+                                <p>Please <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little via PayPal if this digital marketing HTML template is useful for you. Thank you.</p>
+                                <div class="down-buttons">
+                                    <div class="main-blue-button-hover">
+                                        <a href="#video">Watch Videos</a>
+                                    </div>
+                                    <div class="call-button">
+                                        <a href="#"><i class="fa fa-phone"></i> 050-040-0320</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+<div id="services" class="our-services section">
+    <div class="services-right-dec">
+        <img src="~/images/services-right-dec.png" alt="">
+    </div>
+    <div class="container">
+        <div class="services-left-dec">
+            <img src="~/images/services-left-dec.png" alt="">
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2>Thuê <em>SIM</em> nhận mã OTP <span>rẻ nhất thị trường</span></h2>
+                    <span>Đăng ký ngay</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-services">
+                    <div class="item">
+                        <h4>Dịch vụ mạng xã hội</h4>
+                        <div class="icon"><img src="~/images/icon/dichvu-social.png" alt=""></div>
+                        <p>Dịch vụ Tăng Like, Theo dõi, Comment trên Facebook, Instagram, Shopee, TikTok, Google.</p>
+                        <button class="btn-submit">Dùng ngay</button>
+                    </div>
+                    <div class="item">
+                        <h4>Shop Nick Facebook</h4>
+                        <div class="icon"><img src="~/images/icon/shop-via.png" alt=""></div>
+                        <p>Tài khoản Facebook Chạy Quảng Cáo, Nick thật dùng để Seeding, Spam, Nick Xác minh danh tính, Business.</p>
+                        <button class="btn-submit">Dùng ngay</button>
+                    </div>
+                    <div class="item">
+                        <h4>Thuê Sim nhận OTP</h4>
+                        <div class="icon"><img src="~/images/icon/thue-sim.png" alt=""></div>
+                        <p>Bạn chỉ có 1 Số điện thoại, Bạn có quá nhiều dịch vụ cần nhiều Sim đăng ký, Xem chi tiết ở đây.</p>
+                        <button class="btn-submit">Dùng ngay</button>
+                    </div>
+                    <div class="item">
+                        <h4>Đầu tư Bitcoin</h4>
+                        <div class="icon"><img src="~/images/icon/binance.jpeg" alt=""></div>
+                        <p>Hướng dẫn đăng ký sàn giao dịch Bitcoin: Binance, Huobi, Okex, Bitmax, Kucoin, Gate, MXC(Việt Nam)</p>
+                        <button class="btn-submit">Dùng ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about" class="about-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <div class="left-image">
+                    <img src="~/images/about-left-image.png" alt="Two Girls working together">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2>Chúng tôi hiện có hơn 30.000+ số điện thoại <em>trong  &amp; ngoài</em> <span>nước</span></h2>
+                    <p>Số liệu thống kê tổng dịch vụ đã được sử dụng</p>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="fact-item">
+                                <div class="count-area-content">
+                                    <div class="icon">
+                                        <img src="~/images/icon/icon_mkt_1.svg" alt="">
+                                    </div>
+                                    <div class="count-digit">320</div>
+                                    <div class="count-title">Dịch vụ mạng xã hội</div>
+                                    <p>
+                                        Thu hút triệu khách hàng trên
+                                        Facebook, Instagram, TikTok
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="fact-item">
+                                <div class="count-area-content">
+                                    <div class="icon">
+                                        <img src="~/images/icon/icon_mkt_2.svg" alt="">
+                                    </div>
+                                    <div class="count-digit">640</div>
+                                    <div class="count-title">Shop Nick Facebook</div>
+                                    <p>Shop Via - Clone Facebook, Via Ngoại - Tây, TKQC, BM...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="fact-item">
+                                <div class="count-area-content">
+                                    <div class="icon">
+                                        <img src="~/images/icon/icon_mkt_3.svg" alt="">
+                                    </div>
+                                    <div class="count-digit">1250</div>
+                                    <div class="count-title">Thuê Sim nhận OTP</div>
+                                    <p>Bạn có quá nhiều dịch vụ cần nhiều Sim, chúng tôi sẽ giúp bạn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div id="portfolio" class="our-portfolio section">
+    <div class="portfolio-left-dec">
+        <img src="~/images/portfolio-left-dec.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2>Our Recent <em>Projects</em> &amp; Case Studies <span>for Clients</span></h2>
+                    <span>Our Portfolio</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-portfolio">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-01.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a rel="sponsored" href="https://templatemo.com/tm-564-plot-listing" target="_parent"><h4>First Project</h4></a>
+                                    <span>Plot Listing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-02.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>Project Two</h4></a>
+                                    <span>SEO &amp; Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-03.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a rel="sponsored" href="https://templatemo.com/tm-562-space-dynamic" target="_parent"><h4>Third Project</h4></a>
+                                    <span>Space Dynamic SEO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-04.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>Project Four</h4></a>
+                                    <span>Website Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-01.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>Fifth Project</h4></a>
+                                    <span>Digital Assets</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-02.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>Sixth Project</h4></a>
+                                    <span>SEO &amp; Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-03.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>7th Project</h4></a>
+                                    <span>SEO &amp; Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-04.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>8th Project</h4></a>
+                                    <span>SEO &amp; Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-01.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>9th Project</h4></a>
+                                    <span>SEO &amp; Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-02.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>Project Ten</h4></a>
+                                    <span>SEO &amp; Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-03.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>Project Eleven</h4></a>
+                                    <span>SEO &amp; Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="~/images/portfolio-04.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>12th Project</h4></a>
+                                    <span>SEO &amp; Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+<div id="pricing" class="pricing-tables">
+    <div class="tables-left-dec">
+        <img src="~/images/tables-left-dec.png" alt="">
+    </div>
+    <div class="tables-right-dec">
+        <img src="~/images/tables-right-dec.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2>Bảng dịch vụ <em>giá</em> công khai <span>giá rẻ</span></h2>
+                    <span>Của chúng tôi</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="item first-item">
+                    <h4>tiktok, facebook...</h4>
+                    <em>300đ/lượt theo dõi</em>
+                    <span>100đ</span>
+                    <ul>
+                        <li>tăng like</li>
+                        <li>tăng theo dõi</li>
+                        <li>tăng bình luận</li>
+                        <li>tăng tương tác</li>
+                    </ul>
+                    <div class="main-blue-button-hover">
+                        <a href="#">Dùng ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="item first-item">
+                    <h4>tiktok, facebook...</h4>
+                    <em>300đ/lượt theo dõi</em>
+                    <span>100đ</span>
+                    <ul>
+                        <li>tăng like</li>
+                        <li>tăng theo dõi</li>
+                        <li>tăng bình luận</li>
+                        <li>tăng tương tác</li>
+                    </ul>
+                    <div class="main-blue-button-hover">
+                        <a href="#">Dùng ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="item first-item">
+                    <h4>tiktok, facebook...</h4>
+                    <em>300đ/lượt theo dõi</em>
+                    <span>100đ</span>
+                    <ul>
+                        <li>tăng like</li>
+                        <li>tăng theo dõi</li>
+                        <li>tăng bình luận</li>
+                        <li>tăng tương tác</li>
+                    </ul>
+                    <div class="main-blue-button-hover">
+                        <a href="#">Dùng ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div id="subscribe" class="subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <h2>Know Your Website SEO Score by Email</h2>
+                            <form id="subscribe" action="" method="get">
+                                <input type="text" name="website" id="website" placeholder="Your Website URL" required="">
+                                <input type="text" name="email" id="email" placeholder="Your Email" required="">
+                                <button type="submit" id="form-submit" class="main-button ">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+@*<div id="video" class="our-videos section">
+    <div class="videos-left-dec">
+        <img src="~/images/videos-left-dec.png" alt="">
+    </div>
+    <div class="videos-right-dec">
+        <img src="~/images/videos-right-dec.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="naccs">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <ul class="nacc">
+                                    <li class="active">
+                                        <div>
+                                            <div class="thumb">
+                                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/JynGuQx4a1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="overlay-effect">
+                                                    <a href="#"><h4>Project One</h4></a>
+                                                    <span>SEO &amp; Marketing</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="thumb">
+                                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/RdJBSFpcO4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="overlay-effect">
+                                                    <a href="#"><h4>Second Project</h4></a>
+                                                    <span>Advertising &amp; Marketing</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="thumb">
+                                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ZlfAjbQiL78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="overlay-effect">
+                                                    <a href="#"><h4>Project Three</h4></a>
+                                                    <span>Digital &amp; Marketing</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="thumb">
+                                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/mx1WseE7-0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="overlay-effect">
+                                                    <a href="#"><h4>Fourth Project</h4></a>
+                                                    <span>SEO &amp; Advertising</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="menu">
+                                    <div class="active">
+                                        <div class="thumb">
+                                            <img src="~/images/video-thumb-01.png" alt="">
+                                            <div class="inner-content">
+                                                <h4>Project One</h4>
+                                                <span>SEO &amp; Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="thumb">
+                                            <img src="~/images/video-thumb-02.png" alt="">
+                                            <div class="inner-content">
+                                                <h4>Second Project</h4>
+                                                <span>Advertising &amp; Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="thumb">
+                                            <img src="~/images/video-thumb-03.png" alt="Marketing">
+                                            <div class="inner-content">
+                                                <h4>Project Three</h4>
+                                                <span>Digital &amp; Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="thumb">
+                                            <img src="~/images/video-thumb-04.png" alt="SEO Work">
+                                            <div class="inner-content">
+                                                <h4>Fourth Project</h4>
+                                                <span>SEO &amp; Advertising</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+<div id="contact" class="contact-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="section-heading">
+                    <h2>Feel free to <em>Contact</em> us via the <span>HTML form</span></h2>
+                    <div id="map">
+                        <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="info">
+                        <span><i class="fa fa-phone"></i> <a href="#">010-020-0340<br>090-080-0760</a></span>
+                        <span><i class="fa fa-envelope"></i> <a href="#">info@company.com<br>mail@company.com</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 align-self-center">
+                <form id="contact" action="" method="get">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="text" name="email" id="email" placeholder="Your Email" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="text" name="website" id="website" placeholder="Your Website URL" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="main-button">Submit Request</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contact-dec">
+        <img src="~/images/contact-dec.png" alt="">
+    </div>
+    <div class="contact-left-dec">
+        <img src="~/images/contact-left-dec.png" alt="">
+    </div>
+</div>
+
+<div class="footer-dec">
+    <img src="~/images/footer-dec.png" alt="">
+</div>
+
+@*<script>
+    // Acc
+    $(document).on("click", ".naccs .menu div", function () {
+        var numberIndex = $(this).index();
+
+        if (!$(this).is("active")) {
+            $(".naccs .menu div").removeClass("active");
+            $(".naccs ul li").removeClass("active");
+
+            $(this).addClass("active");
+            $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+            var listItemHeight = $(".naccs ul")
+                .find("li:eq(" + numberIndex + ")")
+                .innerHeight();
+            $(".naccs ul").height(listItemHeight + "px");
+        }
+    });
+</script>*@
